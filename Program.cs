@@ -59,15 +59,11 @@ namespace ConsoleApp1
                 IRRF = 27;
             }
 
-            salarioFinal = IRRF > 0 ? (salarioFinal - (salarioBase * (IRRF / 100))) : salarioFinal;
+            //salarioFinal = IRRF > 0 ? (salarioFinal - (salarioBase * (IRRF / 100))) : salarioFinal;
 
             if(IRRF > 0)
             {
                 salarioFinal = (salarioFinal - (salarioBase * (IRRF / 100)));
-            }
-            else
-            {
-                salarioFinal = salarioFinal;
             }
 
             return salarioFinal;
